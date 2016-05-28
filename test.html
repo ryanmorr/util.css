@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>util.css tests</title>
+<link rel="stylesheet" href="util.css">
+<style>
+    /*! suit-test v1.0.0 | MIT License | github.com/suitcss */
+
+    .Test-describe::before {
+        content: counter(test-describe);
+        counter-increment: test-describe;
+    }
+
+    .Test-describe {
+        counter-reset: test-it;
+    }
+
+    .Test-it::before {
+        content: counter(test-describe) "." counter(test-it);
+        counter-increment: test-it;
+    }
+
+    .Test-title {
+        background: #eee;
+        color: #999;
+        font-family: sans-serif;
+        font-size: 2em;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .Test-describe,
+    .Test-it {
+        background: #eee;
+        border-left: 5px solid #666;
+        color: #666;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin: 20px 0;
+        padding: 0.75em 20px;
+    }
+
+    .Test-describe {
+        font-size: 1.5em;
+        margin: 60px 0 20px;
+    }
+
+    .Test-describe::before,
+    .Test-it::before {
+        color: #999;
+        display: inline-block;
+        margin-right: 10px;
+        min-width: 30px;
+        text-transform: uppercase;
+    }
+</style>
+
+<div class="Test">
+    <h1 class="Test-title"><a href="https://github.com/ryanmorr/util.css">util.css</a> tests</h1>
+
+    <h2 class="Test-describe"><code></code></h2>
+    <h3 class="Test-it"></h3>
+    <div class="Test-run"></div>
+</div>
