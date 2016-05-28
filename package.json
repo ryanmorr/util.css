@@ -16,5 +16,12 @@
   },
   "bugs": {
     "url": "https://github.com/ryanmorr/util.css/issues"
+  },
+  "scripts": {
+    "lint": "stylelint util.css"
+  },
+  "devDependencies": {
+    "stylelint": "^6.5.1",
+    "stylelint-config-standard": "^8.0.0"
   }
 }
