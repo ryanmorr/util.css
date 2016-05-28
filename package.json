@@ -18,9 +18,11 @@
     "url": "https://github.com/ryanmorr/util.css/issues"
   },
   "scripts": {
-    "lint": "stylelint util.css"
+    "lint": "stylelint util.css",
+    "minify": "cleancss -o util.min.css util.css"
   },
   "devDependencies": {
+    "clean-css": "^3.4.13",
     "stylelint": "^6.5.1",
     "stylelint-config-standard": "^8.0.0"
   }
