@@ -1,0 +1,20 @@
+{
+  "name": "util.css",
+  "description": "A collection of CSS utilities",
+  "version": "0.1.0",
+  "license": "Unlicense",
+  "homepage": "https://github.com/ryanmorr/util.css",
+  "main": "util.css",
+  "author": {
+    "name": "Ryan Morr",
+    "email": "rm.morr@gmail.com",
+    "url": "http://ryanmorr.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ryanmorr/util.css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanmorr/util.css/issues"
+  }
+}
