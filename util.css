@@ -191,3 +191,28 @@
     top: 0;
     margin: auto;
 }
+
+/* ------------------------------------------------------------------ *\
+    Images
+\* ------------------------------------------------------------------ */
+
+/**
+ * Image replacement to provide a caption to an image that is hidden
+ * visually but available to web crawlers and screen readers
+ */
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/**
+ * Responsive images
+ */
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
