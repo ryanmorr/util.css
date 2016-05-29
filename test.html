@@ -64,7 +64,7 @@
      * Highlight the bounds of direct children of a test block
      */
     
-    .Test-run-highlight > * {
+    .highlight > * {
         outline: 1px solid #ADD8E6;
     }
 </style>
@@ -76,7 +76,7 @@
 
     <h2 class="Test-describe"><code>.clearfix</code></h2>
     <h3 class="Test-it">Should stretch to accommodate floating elements</h3>
-    <div class="Test-run Test-run-highlight">
+    <div class="Test-run highlight">
         <div class="clearfix">
             <div style="float: left">float left</div>
             <div style="float: right">float right</div>
@@ -115,7 +115,7 @@
         <div class="invisible">invisible</div>
     </div>
     <h3 class="Test-it">The element should have layout</h3>
-    <div class="Test-run Test-run-highlight">
+    <div class="Test-run highlight">
         <div>
             <div class="invisible">invisible</div>
         </div>
@@ -127,13 +127,13 @@
         <div class="transparent">transparent</div>
     </div>
     <h3 class="Test-it">The element should have layout</h3>
-    <div class="Test-run Test-run-highlight">
+    <div class="Test-run highlight">
         <div>
             <div class="transparent">transparent</div>
         </div>
     </div>
     <h3 class="Test-it">The element should still be a target for mouse events</h3>
-    <div class="Test-run Test-run-highlight">
+    <div class="Test-run highlight">
         <div style="display: inline-block">
             <a href="#void-transparent" class="transparent">clickable</a>
         </div>
