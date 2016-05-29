@@ -1,6 +1,6 @@
 {
   "name": "util.css",
-  "description": "A collection of cross-browser, semantic, and modular CSS utilities",
+  "description": "A collection of project agnostic, semantic, and modular CSS utilities",
   "version": "0.1.0",
   "license": "Unlicense",
   "homepage": "https://github.com/ryanmorr/util.css",
