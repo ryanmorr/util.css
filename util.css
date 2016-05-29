@@ -117,3 +117,77 @@
     -webkit-transform: translate(-100%, -100%);
     transform: translate(-100%, -100%);
 }
+
+/* ------------------------------------------------------------------ *\
+    Positioning
+\* ------------------------------------------------------------------ */
+
+/**
+ * Center an element horizontally
+ */
+
+.center-x {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Center an element vertically
+ */
+
+.center-y {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/**
+ * Center an element horizontally and vertically
+ */
+
+.center-xy {
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/**
+ * Center an absolutely positioned element horizontally
+ */
+
+.center-x-abs {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Center an absolutely positioned element vertically
+ */
+
+.center-y-abs {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/**
+ * Center an absolutely positioned element horizontally and vertically
+ */
+
+.center-xy-abs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}

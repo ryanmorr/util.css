@@ -164,4 +164,54 @@
         document.querySelector('.output').innerHTML = 'width: ' + measurable.style.width + ', height: ' + measurable.style.height;
         </script>
     </div>
+
+    <!-- Positioning -->
+
+    <h2 class="Test-describe"><code>.center-x</code></h2>
+    <h3 class="Test-it">Should center the element horizontally</h3>
+    <div class="Test-run highlight">
+        <div class="highlight">
+            <div class="center-x" style="width: 100px; text-align: center">centered</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.center-y</code></h2>
+    <h3 class="Test-it">Should center the element vertically</h3>
+    <div class="Test-run highlight">
+        <div class="highlight" style="height: 100px">
+            <div class="center-y">centered</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.center-xy</code></h2>
+    <h3 class="Test-it">Should center the element horizontally and vertically</h3>
+    <div class="Test-run highlight">
+        <div class="highlight" style="height: 100px">
+            <div class="center-xy">centered</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.center-x-abs</code></h2>
+    <h3 class="Test-it">Should center an absolutely positioned element horizontally</h3>
+    <div class="Test-run highlight">
+        <div class="highlight" style="position: relative">
+            <div class="center-x-abs" style="width: 100px; text-align: center">centered</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.center-y-abs</code></h2>
+    <h3 class="Test-it">Should center an absolutely positioned element vertically</h3>
+    <div class="Test-run highlight">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="center-y-abs" style="height: 20px">centered</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.center-xy-abs</code></h2>
+    <h3 class="Test-it">Should center an absolutely positioned element horizontally and vertically</h3>
+    <div class="Test-run highlight">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="center-xy-abs" style="height: 20px; width: 100px; text-align: center">centered</div>
+        </div>
+    </div>
 </div>
