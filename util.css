@@ -34,3 +34,86 @@
 .pull-right {
     float: right;
 }
+
+/* ------------------------------------------------------------------ *\
+    Visibility
+\* ------------------------------------------------------------------ */
+
+/**
+ * Show an element
+ */
+
+.show {
+    display: block !important;
+}
+
+/**
+ * Hide an element visually and from screen readers
+ */
+
+.hide {
+    display: none !important;
+}
+
+/**
+ * Hide an element visually and from screen readers, but
+ * maintain layout
+ */
+
+.invisible {
+    visibility: hidden !important;
+}
+
+/**
+ * Hide an element visually, but still allow it to be accessible
+ * to screen readers, maintain layout, and allow pointer events
+ */
+
+.transparent {
+    opacity: 0 !important;
+}
+
+/**
+ * Hide an element visually, but still allow it to be accessible
+ * to screen readers
+ */
+
+.hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extend the `hidden-accessible` class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css
+ */
+
+.hidden-accessible.focusable:active,
+.hidden-accessible.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/**
+ * Hide an element visually, but maintain its layout offscreen so that
+ * its width and height and still be accurately measured
+ */
+
+.hidden-measurable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-100%, -100%);
+    transform: translate(-100%, -100%);
+}

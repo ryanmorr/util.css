@@ -94,4 +94,74 @@
     <div class="Test-run clearfix">
         <div class="pull-right">float right</div>
     </div>
+
+    <!-- Visibility -->
+
+    <h2 class="Test-describe"><code>.show</code></h2>
+    <h3 class="Test-it">The element should be visible</h3>
+    <div class="Test-run">
+        <div class="show" style="display: none">visible</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.hide</code></h2>
+    <h3 class="Test-it">The element should not be visible and without layout</h3>
+    <div class="Test-run">
+        <div class="hide" style="display: block">hidden</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.invisible</code></h2>
+    <h3 class="Test-it">The element should not be visible</h3>
+    <div class="Test-run">
+        <div class="invisible">invisible</div>
+    </div>
+    <h3 class="Test-it">The element should have layout</h3>
+    <div class="Test-run Test-run-highlight">
+        <div>
+            <div class="invisible">invisible</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.transparent</code></h2>
+    <h3 class="Test-it">The element should be not visible</h3>
+    <div class="Test-run">
+        <div class="transparent">transparent</div>
+    </div>
+    <h3 class="Test-it">The element should have layout</h3>
+    <div class="Test-run Test-run-highlight">
+        <div>
+            <div class="transparent">transparent</div>
+        </div>
+    </div>
+    <h3 class="Test-it">The element should still be a target for mouse events</h3>
+    <div class="Test-run Test-run-highlight">
+        <div style="display: inline-block">
+            <a href="#void-transparent" class="transparent">clickable</a>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.hidden-accessible</code></h2>
+    <h3 class="Test-it">The element should not be visible and without layout, but available to screen readers</h3>
+    <div class="Test-run">
+        <div class="hidden-accessible">hidden-accessible</div>
+    </div>
+
+    <h2 class="Test-describe">
+        <code>.hidden-accessible.focusable:active</code>, 
+        <code>.hidden-accessible.focusable:focus</code>
+    </h2>
+    <h3 class="Test-it">The element should be focusable when navigated to via the keyboard</h3>
+    <div class="Test-run">
+        <a href="#void-hidden-accessible-focusable" class="hidden-accessible focusable">focusable link</a>
+    </div>
+
+    <h2 class="Test-describe"><code>.hidden-measurable</code></h2>
+    <h3 class="Test-it">The element should not be visible, but maintain layout offscreen</h3>
+    <div class="Test-run">
+        <div class="hidden-measurable" style="width: 200px; height: 300px">hidden</div>
+        <div class="output"></div>
+        <script>
+        var measurable = document.querySelector('.hidden-measurable');
+        document.querySelector('.output').innerHTML = 'width: ' + measurable.style.width + ', height: ' + measurable.style.height;
+        </script>
+    </div>
 </div>
