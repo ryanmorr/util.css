@@ -1,1 +1,36 @@
 /*! util.css v0.1.0 | https://github.com/ryanmorr/util.css */
+
+/* ------------------------------------------------------------------ *\
+    Floats
+\* ------------------------------------------------------------------ */
+
+/**
+ * Allows a container element to stretch to accommodate the
+ * floating elements consistently between browsers
+ */
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/**
+ * Float an element left
+ */
+
+.pull-left {
+    float: left;
+}
+
+/**
+ * Float an element right
+ */
+
+.pull-right {
+    float: right;
+}

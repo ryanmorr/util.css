@@ -7,6 +7,11 @@
 <style>
     /*! suit-test v1.0.0 | MIT License | github.com/suitcss */
 
+    .Test {
+        background: #fff;
+        counter-reset: test-describe;
+    }
+
     .Test-describe::before {
         content: counter(test-describe);
         counter-increment: test-describe;
@@ -54,12 +59,39 @@
         min-width: 30px;
         text-transform: uppercase;
     }
+
+    /**
+     * Highlight the bounds of direct children of a test block
+     */
+    
+    .Test-run-highlight > * {
+        outline: 1px solid #ADD8E6;
+    }
 </style>
 
 <div class="Test">
     <h1 class="Test-title"><a href="https://github.com/ryanmorr/util.css">util.css</a> tests</h1>
 
-    <h2 class="Test-describe"><code></code></h2>
-    <h3 class="Test-it"></h3>
-    <div class="Test-run"></div>
+    <!-- Floats -->
+
+    <h2 class="Test-describe"><code>.clearfix</code></h2>
+    <h3 class="Test-it">Should stretch to accommodate floating elements</h3>
+    <div class="Test-run Test-run-highlight">
+        <div class="clearfix">
+            <div style="float: left">float left</div>
+            <div style="float: right">float right</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.pull-left</code></h2>
+    <h3 class="Test-it">Should float the element left</h3>
+    <div class="Test-run clearfix">
+        <div class="pull-left">float left</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.pull-right</code></h2>
+    <h3 class="Test-it">Should float the element right</h3>
+    <div class="Test-run clearfix">
+        <div class="pull-right">float right</div>
+    </div>
 </div>
