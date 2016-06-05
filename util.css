@@ -219,6 +219,33 @@
 }
 
 /* ------------------------------------------------------------------ *\
+    Transitions
+\* ------------------------------------------------------------------ */
+
+/**
+ * Allow an element to transition whenever a property changes
+ */
+
+.transition {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+/**
+ * Hack to create a new stacking context in order to invoke hardware
+ * acceleration for smoother animations
+ */
+
+.accelerated {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+/* ------------------------------------------------------------------ *\
     Print
 \* ------------------------------------------------------------------ */
 
