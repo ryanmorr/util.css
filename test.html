@@ -256,4 +256,44 @@
         }, 500);
         </script>
     </div>
+
+    <!-- Interaction -->
+
+    <h2 class="Test-describe">
+        <code>.disabled</code>, 
+        <code>:disabled</code>, 
+        <code>[disabled]</code>, 
+        <code>[aria-disabled]</code>
+    </h2>
+    <h3 class="Test-it">Element should indicate a disabled state</h3>
+    <div class="Test-run">
+        <a href="#void-disabled" aria-disabled>Disabled</a>
+    </div>
+    <h3 class="Test-it">Button should be unclickable</h3>
+    <div class="Test-run">
+        <button class="disabled">Click Me</button>
+    </div>
+    <h3 class="Test-it">Input should be unfocusable</h3>
+    <div class="Test-run">
+        <input type="text" size="10" disabled />
+    </div>
+
+    <h2 class="Test-describe">
+        <code>.draggable</code>, 
+        <code>[draggable="true"]</code>
+    </h2>
+    <h3 class="Test-it">Should indicate that the element is draggable</h3>
+    <div class="Test-run">
+        <div class="draggable">Draggable</div>
+    </div>
+    <h3 class="Test-it">Should prevent text selection of draggable element</h3>
+    <div class="Test-run">
+        <div draggable="true">Draggable</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.unselectable</code></h2>
+    <h3 class="Test-it">Should prevent text selection</h3>
+    <div class="Test-run">
+        <div class="unselectable">Dictumst lacinia at parturient a pharetra semper sem quam hac ullamcorper dui varius a metus.</div>
+    </div>
 </div>
