@@ -198,8 +198,8 @@
 \* ------------------------------------------------------------------ */
 
 /**
- * Image replacement to provide a caption to an image that is hidden
- * visually but available to web crawlers and screen readers
+ * Image replacement to provide a caption to an image that is only
+ * available to web crawlers and screen readers
  */
 
 .hide-text {
@@ -209,7 +209,7 @@
 }
 
 /**
- * Responsive images
+ * Make an image responsive while maintaining aspect ratio
  */
 
 .img-responsive {
