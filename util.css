@@ -334,6 +334,16 @@
 \* ------------------------------------------------------------------ */
 
 /**
+ * Indicate that an element is actionable (clickable)
+ */
+
+.actionable,
+[role="button"],
+[aria-controls] {
+    cursor: pointer;
+}
+
+/**
  * Add drag characteristics to an element
  */
 
