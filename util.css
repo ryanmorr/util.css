@@ -305,6 +305,15 @@
     user-select: none;
 }
 
+/**
+ * Make an element resizable on both axes
+ */
+
+.resizable {
+    overflow: auto;
+    resize: both;
+}
+
 /* ------------------------------------------------------------------ *\
     Print
 \* ------------------------------------------------------------------ */

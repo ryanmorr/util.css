@@ -267,11 +267,11 @@
     </h2>
     <h3 class="Test-it">Element should indicate a disabled state</h3>
     <div class="Test-run">
-        <a href="#void-disabled" aria-disabled>Disabled</a>
+        <a href="#void-disabled" aria-disabled>disabled</a>
     </div>
     <h3 class="Test-it">Button should be unclickable</h3>
     <div class="Test-run">
-        <button class="disabled">Click Me</button>
+        <button class="disabled">click me</button>
     </div>
     <h3 class="Test-it">Input should be unfocusable</h3>
     <div class="Test-run">
@@ -284,16 +284,22 @@
     </h2>
     <h3 class="Test-it">Should indicate that the element is draggable</h3>
     <div class="Test-run">
-        <div class="draggable">Draggable</div>
+        <div class="draggable">draggable</div>
     </div>
     <h3 class="Test-it">Should prevent text selection of draggable element</h3>
     <div class="Test-run">
-        <div draggable="true">Draggable</div>
+        <div draggable="true">draggable</div>
     </div>
 
     <h2 class="Test-describe"><code>.unselectable</code></h2>
     <h3 class="Test-it">Should prevent text selection</h3>
     <div class="Test-run">
         <div class="unselectable">Dictumst lacinia at parturient a pharetra semper sem quam hac ullamcorper dui varius a metus.</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.resizable</code></h2>
+    <h3 class="Test-it">Should make an element resizable on both axes</h3>
+    <div class="Test-run highlight">
+        <div class="resizable" style="width: 100px; height: 100px">Dictumst lacinia at parturient a pharetra semper sem quam hac ullamcorper dui varius a metus.</div>
     </div>
 </div>
