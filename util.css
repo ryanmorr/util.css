@@ -194,8 +194,19 @@
 }
 
 /* ------------------------------------------------------------------ *\
-    Text
+    Typography
 \* ------------------------------------------------------------------ */
+
+/**
+ * Enable antialiasing for a smoother font
+ */
+
+.antialiased {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}
 
 /**
  * Prevent text from wrapping and truncate with an ellipsis.
