@@ -207,6 +207,15 @@
     white-space: nowrap;
 }
 
+/**
+ * Break strings when their length exceeds the width of their
+ * container
+ */
+
+.text-break {
+    word-wrap: break-word !important;
+}
+
 /* ------------------------------------------------------------------ *\
     Images
 \* ------------------------------------------------------------------ */
