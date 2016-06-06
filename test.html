@@ -215,7 +215,7 @@
         </div>
     </div>
 
-    <!-- Typography -->
+    <!-- Text -->
 
     <h2 class="Test-describe"><code>.antialiased</code></h2>
     <h3 class="Test-it">Should make the text smooth</h3>
@@ -287,7 +287,7 @@
         </script>
     </div>
 
-    <!-- Interaction -->
+    <!-- State -->
 
     <h2 class="Test-describe">
         <code>.disabled</code>, 
@@ -307,6 +307,17 @@
     <div class="Test-run">
         <input type="text" size="10" disabled />
     </div>
+
+    <h2 class="Test-describe">
+        <code>.loading</code>, 
+        <code>[aria-busy="true"]</code>
+    </h2>
+    <h3 class="Test-it">Should indicate that the element is loading</h3>
+    <div class="Test-run">
+        <div class="loading">loading</div>
+    </div>
+
+    <!-- Interaction -->
 
     <h2 class="Test-describe">
         <code>.draggable</code>, 
