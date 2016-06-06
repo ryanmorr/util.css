@@ -209,6 +209,16 @@
 }
 
 /**
+ * Enable font kerning for optimal spacing
+ */
+
+.kern {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/**
  * Prevent text from wrapping and truncate with an ellipsis.
  */
 
@@ -312,19 +322,16 @@
 
 /**
  * Add drag characteristics to an element
- *
- * 1. Ensure the entire element is dragged instead of its contents
- * 2. Prevent text selection when dragging
  */
 
 .draggable,
 [draggable="true"] {
     cursor: move;
-    -webkit-user-drag: element; /* 1 */
-    -moz-user-select: none; /* 2 */
-    -webkit-user-select: none; /* 2 */
-    -ms-user-select: none; /* 2 */
-    user-select: none;  /* 2 */
+    -webkit-user-drag: element;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /**
