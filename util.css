@@ -355,6 +355,8 @@
 .draggable,
 [draggable="true"] {
     cursor: move;
+    -ms-touch-action: none;
+    touch-action: none;
     -webkit-user-drag: element;
     -moz-user-select: none;
     -webkit-user-select: none;
