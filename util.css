@@ -235,6 +235,10 @@
 
 .text-break {
     word-wrap: break-word !important;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 /* ------------------------------------------------------------------ *\
