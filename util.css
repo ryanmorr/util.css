@@ -235,6 +235,7 @@
 
 .text-break {
     word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     -moz-hyphens: auto;
