@@ -346,6 +346,8 @@
 [role="button"],
 [aria-controls] {
     cursor: pointer;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
 }
 
 /**
