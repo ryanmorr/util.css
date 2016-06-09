@@ -55,6 +55,23 @@
     display: inline-flex;
 }
 
+/**
+ * Don't include the padding and border as part of the width
+ * and height of an element
+ */
+
+.border-box,
+.border-box::before,
+.border-box::after {
+    box-sizing: border-box;
+}
+
+.border-box *,
+.border-box *::before,
+.border-box *::after {
+    box-sizing: inherit;
+}
+
 /* ------------------------------------------------------------------ *\
     Visibility
 \* ------------------------------------------------------------------ */
