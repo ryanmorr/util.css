@@ -72,7 +72,7 @@
 <div class="Test">
     <h1 class="Test-title"><a href="https://github.com/ryanmorr/util.css">util.css</a> tests</h1>
 
-    <!-- Floats -->
+    <!-- Layout -->
 
     <h2 class="Test-describe"><code>.clearfix</code></h2>
     <h3 class="Test-it">Should stretch to accommodate floating elements</h3>
@@ -93,6 +93,26 @@
     <h3 class="Test-it">Should float the element right</h3>
     <div class="Test-run clearfix">
         <div class="pull-right">float right</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.flex</code></h2>
+    <h3 class="Test-it">Should behave like a block element that lays out its content according to flexbox</h3>
+    <div class="Test-run">
+        <div class="flex highlight" style="text-align:center">
+            <div style="flex: 1">1</div>
+            <div style="flex: 1">2</div>
+            <div style="flex: 1">3</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.inline-flex</code></h2>
+    <h3 class="Test-it">Should behave like an inline element that lays out its content according to flexbox</h3>
+    <div class="Test-run">
+        <div class="inline-flex highlight" style="text-align:center">
+            <div style="flex: 1">1</div>
+            <div style="flex: 1">2</div>
+            <div style="flex: 1">3</div>
+        </div>
     </div>
 
     <!-- Visibility -->
