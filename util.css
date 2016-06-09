@@ -350,11 +350,6 @@
     pointer-events: none !important;
 }
 
-/**
- * Ensure child elements of a disabled element
- * cannot become the target of mouse events
- */
-
 .disabled *,
 :disabled *,
 [disabled] *,
