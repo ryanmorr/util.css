@@ -366,6 +366,15 @@
     cursor: progress;
 }
 
+/**
+ * Indicate that an element is a helpful resource
+ */
+
+.help,
+abbr[title] {
+    cursor: help;
+}
+
 /* ------------------------------------------------------------------ *\
     Interaction
 \* ------------------------------------------------------------------ */
