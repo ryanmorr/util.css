@@ -36,6 +36,27 @@
 }
 
 /**
+ * Don't include the padding and border as part of the width
+ * and height of an element
+ */
+
+.border-box,
+.border-box::before,
+.border-box::after {
+    box-sizing: border-box;
+}
+
+.border-box *,
+.border-box *::before,
+.border-box *::after {
+    box-sizing: inherit;
+}
+
+/* ------------------------------------------------------------------ *\
+    Flexbox
+\* ------------------------------------------------------------------ */
+
+/**
  * Block element that lays out its content according to flexbox
  */
 
@@ -53,23 +74,6 @@
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
-}
-
-/**
- * Don't include the padding and border as part of the width
- * and height of an element
- */
-
-.border-box,
-.border-box::before,
-.border-box::after {
-    box-sizing: border-box;
-}
-
-.border-box *,
-.border-box *::before,
-.border-box *::after {
-    box-sizing: inherit;
 }
 
 /* ------------------------------------------------------------------ *\
