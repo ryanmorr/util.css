@@ -155,6 +155,28 @@
     justify-content: space-around;
 }
 
+/**
+ * Items are stacked horizontally, side-by-side
+ */
+
+.flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+/**
+ * Items are stacked vertically, top-to-bottom
+ */
+
+.flex-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
 /* ------------------------------------------------------------------ *\
     Visibility
 \* ------------------------------------------------------------------ */
