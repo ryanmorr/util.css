@@ -260,6 +260,73 @@
     transform: translate(-100%, -100%);
 }
 
+/**
+ * Responsive visibility based on device viewport
+ */
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: none !important;
+}
+
+/**
+ * Hide/show content on extra small screens
+ */
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .visible-xs {
+        display: block !important;
+    }
+}
+
+/**
+ * Hide/show content on small screens
+ */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .visible-sm {
+        display: block !important;
+    }
+}
+
+/**
+ * Hide/show content on medium sized screens
+ */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none !important;
+    }
+
+    .visible-md {
+        display: block !important;
+    }
+}
+
+/**
+ * Hide/show content on large screens
+ */
+
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none !important;
+    }
+
+    .visible-lg {
+        display: block !important;
+    }
+}
+
 /* ------------------------------------------------------------------ *\
     Positioning
 \* ------------------------------------------------------------------ */
