@@ -136,6 +136,25 @@
     justify-content: flex-end;
 }
 
+/**
+ *  Items are evenly distributed in the line; first item is on the start line, last item on the end line
+ */
+
+.flex-align-justify {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/**
+ * Items are evenly distributed in the line with equal space around them
+ */
+
+.flex-align-distribute {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
 /* ------------------------------------------------------------------ *\
     Visibility
 \* ------------------------------------------------------------------ */
