@@ -439,6 +439,54 @@
         </script>
     </div>
 
+    <h2 class="Test-describe"><code>.fadable</code></h2>
+    <h3 class="Test-it">Should transition the element to creating a fading in/out effect</h3>
+    <div class="Test-run">
+        <div class="fadable" style="width: 50px; height: 50px; background-color: #ccc"></div>
+        <button id="fade-btn" style="margin-top: 5px">Fade In</button>
+        <script>
+        var out = true;
+        var fadable = document.querySelector('.fadable');
+        var btn = document.querySelector('#fade-btn');
+        btn.addEventListener('click', function(){
+            if (out) {
+                fadable.style.opacity = 1;
+                btn.textContent = 'Fade Out';
+                out = false;
+            } else {
+                fadable.style.opacity = 0;
+                btn.textContent = 'Fade In';
+                out = true;
+            }
+        });
+        </script>
+    </div>
+
+    <h2 class="Test-describe"><code>.collapsible</code></h2>
+    <h3 class="Test-it">Should transition the element to creating a collapsing/expanding effect</h3>
+    <div class="Test-run">
+        <div class="collapsible" style="width: 50px; background-color: #ccc"></div>
+        <button id="collapsible-btn" style="margin-top: 5px">Expand</button>
+        <script>
+        var collapsed = true;
+        var collapsible = document.querySelector('.collapsible');
+        var btn = document.querySelector('#collapsible-btn');
+        btn.addEventListener('click', function(){
+            if (collapsed) {
+                collapsible.style.height = '50px';
+                collapsible.style.Visibility = 'visible';
+                btn.textContent = 'Collapse';
+                collapsed = false;
+            } else {
+                collapsible.style.height = 0;
+                collapsible.style.Visibility = 'hidden';
+                btn.textContent = 'Expand';
+                collapsed = true;
+            }
+        });
+        </script>
+    </div>
+
     <h2 class="Test-describe"><code>.accelerated</code></h2>
     <h3 class="Test-it">Should invoke hardware acceleration for transitions</h3>
     <div class="Test-run">

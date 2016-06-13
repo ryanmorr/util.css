@@ -491,6 +491,32 @@
 }
 
 /**
+ * Provides a fade in/out effect to an element
+ */
+
+.fadable {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+
+/**
+ * Provides a collapse/expand effect to an element
+ */
+
+.collapsible {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+}
+
+/**
  * Hack to create a new stacking context in order to invoke hardware
  * acceleration for smoother animations
  */
