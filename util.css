@@ -573,6 +573,14 @@ abbr[title] {
     cursor: help;
 }
 
+/**
+ * Indicate that an element is restricted from interaction
+ */
+
+.restricted {
+    cursor: not-allowed;
+}
+
 /* ------------------------------------------------------------------ *\
     Interaction
 \* ------------------------------------------------------------------ */
