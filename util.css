@@ -264,10 +264,10 @@
  * Responsive visibility based on device viewport
  */
 
-.visible-xs,
-.visible-sm,
-.visible-md,
-.visible-lg {
+.visible-extra-small,
+.visible-small,
+.visible-medium,
+.visible-large {
     display: none !important;
 }
 
@@ -276,11 +276,11 @@
  */
 
 @media (max-width: 767px) {
-    .hidden-xs {
+    .hidden-extra-small {
         display: none !important;
     }
 
-    .visible-xs {
+    .visible-extra-small {
         display: block !important;
     }
 }
@@ -290,11 +290,11 @@
  */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .hidden-sm {
+    .hidden-small {
         display: none !important;
     }
 
-    .visible-sm {
+    .visible-small {
         display: block !important;
     }
 }
@@ -304,11 +304,11 @@
  */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .hidden-md {
+    .hidden-medium {
         display: none !important;
     }
 
-    .visible-md {
+    .visible-medium {
         display: block !important;
     }
 }
@@ -318,11 +318,11 @@
  */
 
 @media (min-width: 1200px) {
-    .hidden-lg {
+    .hidden-large {
         display: none !important;
     }
 
-    .visible-lg {
+    .visible-large {
         display: block !important;
     }
 }
