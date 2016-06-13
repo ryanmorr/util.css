@@ -618,6 +618,14 @@ abbr[title] {
 }
 
 /**
+ * Prevent user interaction
+ */
+
+.unclickable {
+    pointer-events: none !important;
+}
+
+/**
  * Make an element resizable on both axes
  */
 
