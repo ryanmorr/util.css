@@ -372,7 +372,7 @@
 \* ------------------------------------------------------------------ */
 
 /**
- * Center an element horizontally
+ * Center an element horizontally (width required)
  */
 
 .center {
@@ -419,7 +419,7 @@
 
 /**
  * Align an absolutely positioned element to the top-center
- * of its container
+ * of its container (width required)
  */
 
 .abs-top-center {
@@ -444,7 +444,7 @@
 
 /**
  * Align an absolutely positioned element to the middle-left
- * of its container
+ * of its container (height required)
  */
 
 .abs-middle-left {
@@ -458,7 +458,7 @@
 
 /**
  * Align an absolutely positioned element to the middle-center
- * of its container
+ * of its container (width & height required)
  */
 
 .abs-middle-center {
@@ -472,7 +472,7 @@
 
 /**
  * Align an absolutely positioned element to the middle-right
- * of its container
+ * of its container (height required)
  */
 
 .abs-middle-right {
@@ -497,7 +497,7 @@
 
 /**
  * Align an absolutely positioned element to the bottom-center
- * of its container
+ * of its container (width required)
  */
 
 .abs-bottom-center {
