@@ -693,4 +693,16 @@
         </div>
     </div>
 
+    <h2 class="Test-describe"><code>.overlay</code></h2>
+    <h3 class="Test-it">Should create a fixed overlay</h3>
+    <div class="Test-run">
+        <div class="overlay hide" style="width: 100px; height: 100px; background-color: #ccc">overlay</div>
+        <button class="toggle-overlay">Toggle</button>
+        <script>
+        document.querySelector('.toggle-overlay').addEventListener('click', function(){
+            document.querySelector('.overlay').classList.toggle('hide');
+        });
+        </script>
+    </div>
+
 </div>
