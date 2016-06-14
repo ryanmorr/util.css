@@ -204,7 +204,7 @@
 \* ------------------------------------------------------------------ */
 
 /**
- * Show an element
+ * Shows an element
  */
 
 .show {
@@ -212,7 +212,8 @@
 }
 
 /**
- * Hide an element visually and from screen readers
+ * Hides an element visually and from screen readers and removes
+ * its layout
  */
 
 .hide {
@@ -322,7 +323,7 @@
 }
 
 /**
- * Show/hide content on medium sized screens
+ * Show/hide content on medium-sized screens
  */
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -372,7 +373,7 @@
 \* ------------------------------------------------------------------ */
 
 /**
- * Center an element horizontally (width required)
+ * Center an element horizontally (requires width)
  */
 
 .center {
@@ -546,7 +547,7 @@
 }
 
 /**
- * Prevent text from wrapping and truncate with an ellipsis.
+ * Prevent text from wrapping and truncate with an ellipsis
  */
 
 .text-truncate {
@@ -760,7 +761,7 @@ abbr[title] {
 }
 
 /**
- * Display vertical scrollbar for an element
+ * Make an element vertically scrollable
  */
 
 .scrollable-vertical {
@@ -771,7 +772,7 @@ abbr[title] {
 }
 
 /**
- * Display horizontal scrollbar for an element
+ * Make an element horizontally scrollable
  */
 
 .scrollable-horizontal {
