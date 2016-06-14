@@ -419,7 +419,7 @@
 
 /**
  * Align an absolutely positioned element to the top-center
- * of its container (width required)
+ * of its container (requires width)
  */
 
 .abs-top-center {
@@ -444,7 +444,7 @@
 
 /**
  * Align an absolutely positioned element to the middle-left
- * of its container (height required)
+ * of its container (requires height)
  */
 
 .abs-middle-left {
@@ -458,7 +458,7 @@
 
 /**
  * Align an absolutely positioned element to the middle-center
- * of its container (width & height required)
+ * of its container (requires width & height)
  */
 
 .abs-middle-center {
@@ -472,7 +472,7 @@
 
 /**
  * Align an absolutely positioned element to the middle-right
- * of its container (height required)
+ * of its container (requires height)
  */
 
 .abs-middle-right {
@@ -497,7 +497,7 @@
 
 /**
  * Align an absolutely positioned element to the bottom-center
- * of its container (width required)
+ * of its container (requires width)
  */
 
 .abs-bottom-center {
@@ -780,4 +780,31 @@ abbr[title] {
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
+}
+
+/* ------------------------------------------------------------------ *\
+    UI
+\* ------------------------------------------------------------------ */
+
+/**
+ * All-purpose wrapper for UI elements
+ */
+
+.container {
+    display: block;
+    position: relative;
+}
+
+/**
+ * Include clearfix for convenience
+ */
+
+.container::before,
+.container::after {
+    content: " ";
+    display: table;
+}
+
+.container::after {
+    clear: both;
 }
