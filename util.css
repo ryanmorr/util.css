@@ -752,6 +752,14 @@ abbr[title] {
 }
 
 /**
+ * Prevent the callout menu appearing in iOS Safari when the user performs tap & hold
+ */
+
+.prevent-callout {
+    -webkit-touch-callout: none !important;
+}
+
+/**
  * Make an element resizable on both axes
  */
 
