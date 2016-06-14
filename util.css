@@ -375,7 +375,7 @@
  * Center an element horizontally
  */
 
-.center-x {
+.center {
     display: block;
     float: none;
     margin-left: auto;
@@ -386,7 +386,7 @@
  * Center an element vertically
  */
 
-.center-y {
+.middle {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -397,7 +397,7 @@
  * Center an element horizontally and vertically
  */
 
-.center-xy {
+.middle-center {
     margin: 0 auto;
     display: table;
     position: relative;
