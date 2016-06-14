@@ -407,11 +407,24 @@
 }
 
 /**
- * Center an absolutely positioned element horizontally
+ * Align an absolutely positioned element to the top-left
+ * of its container
  */
 
-.center-x-abs {
+.abs-top-left {
     position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/**
+ * Align an absolutely positioned element to the top-center
+ * of its container
+ */
+
+.abs-top-center {
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -419,28 +432,92 @@
 }
 
 /**
- * Center an absolutely positioned element vertically
+ * Align an absolutely positioned element to the top-right
+ * of its container
  */
 
-.center-y-abs {
+.abs-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/**
+ * Align an absolutely positioned element to the middle-left
+ * of its container
+ */
+
+.abs-middle-left {
     position: absolute;
     bottom: 0;
     top: 0;
+    left: 0;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 /**
- * Center an absolutely positioned element horizontally and vertically
+ * Align an absolutely positioned element to the middle-center
+ * of its container
  */
 
-.center-xy-abs {
+.abs-middle-center {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
     margin: auto;
+}
+
+/**
+ * Align an absolutely positioned element to the middle-right
+ * of its container
+ */
+
+.abs-middle-right {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/**
+ * Align an absolutely positioned element to the bottom-left
+ * of its container
+ */
+
+.abs-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/**
+ * Align an absolutely positioned element to the bottom-center
+ * of its container
+ */
+
+.abs-bottom-center {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Align an absolutely positioned element to the bottom-right
+ * of its container
+ */
+
+.abs-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /* ------------------------------------------------------------------ *\
