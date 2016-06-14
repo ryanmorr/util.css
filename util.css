@@ -35,6 +35,28 @@
     float: right;
 }
 
+/*
+ * Sets a maximum width relative to the parent and auto scales
+ * the height
+ */
+
+.responsive-width {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * Sets a maximum height relative to the parent and auto scales
+ * the width, only works if the parent element has a fixed height
+ */
+
+.responsive-height {
+    box-sizing: border-box;
+    max-height: 100%;
+    width: auto;
+}
+
 /**
  * Don't include the padding and border as part of the width
  * and height of an element
