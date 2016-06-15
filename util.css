@@ -172,7 +172,7 @@
  * Items are evenly distributed in the line with equal space around them
  */
 
-.flex-align-distribute {
+.flex-align-even {
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
