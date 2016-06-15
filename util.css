@@ -199,6 +199,24 @@
     flex-direction: column;
 }
 
+/**
+ * Force items to be laid out on a single line
+ */
+
+.flex-nowrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+/**
+ * Allow items to break into multiple lines
+ */
+
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 /* ------------------------------------------------------------------ *\
     Visibility
 \* ------------------------------------------------------------------ */
