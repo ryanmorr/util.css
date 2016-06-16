@@ -147,7 +147,7 @@ Name        | Description
 
 ## Installation
 
-Download the [development](http://github.com/ryanmorr/hashmap/raw/master/util.css) or [minified](http://github.com/ryanmorr/hashmap/raw/master/util.min.css) version, or install it in one of the following ways:
+Download the [development](http://github.com/ryanmorr/util.css/raw/master/util.css) or [minified](http://github.com/ryanmorr/util.css/raw/master/util.min.css) version, or install it in one of the following ways:
 
 ``` sh
 npm install ryanmorr/util.css
