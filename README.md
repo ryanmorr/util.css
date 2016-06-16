@@ -15,7 +15,7 @@ The library is composed of over 70 utility classes written in raw CSS (not a pre
 * [Transitions](#transitions)
 * [State](#state)
 * [Interaction](#interaction)
-* [User Interface](#user-interaction)
+* [User Interface](#user-interface)
 
 #### Layout
 
