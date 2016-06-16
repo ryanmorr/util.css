@@ -5,8 +5,7 @@
 \* ------------------------------------------------------------------ */
 
 /**
- * Allows a container element to stretch to accommodate the
- * floating elements consistently between browsers
+ * Allows an element to stretch to accommodate floating elements
  */
 
 .clearfix::before,
@@ -99,8 +98,7 @@
 }
 
 /**
- * Place an item's cross-start margin edge on the cross-start
- * line (top row)
+ * Place an item to the top of the container
  */
 
 .flex-align-top {
@@ -110,7 +108,7 @@
 }
 
 /**
- * Items are centered in the cross-axis (middle row)
+ * Place an item to the middle of the container
  */
 
 .flex-align-middle {
@@ -120,8 +118,7 @@
 }
 
 /**
- * Place an item's cross-end margin edge on the cross-end
- * line (bottom row)
+ * Place an item to the bottom of the container
  */
 
 .flex-align-bottom {
@@ -131,7 +128,7 @@
 }
 
 /**
- * Pack items toward the start line (left col)
+ * Pack items toward the start line
  */
 
 .flex-align-left {
@@ -141,7 +138,7 @@
 }
 
 /**
- * Items are centered along the line (center col)
+ * Items are centered along the line
  */
 
 .flex-align-center {
@@ -151,7 +148,7 @@
 }
 
 /**
- * Pack items toward the end line (right col)
+ * Pack items toward the end line
  */
 
 .flex-align-right {
@@ -161,7 +158,7 @@
 }
 
 /**
- *  Items are evenly distributed in the line; first item is
+ *  Items are evenly distributed on the line; first item is
  *  on the start line, last item on the end line
  */
 
@@ -172,7 +169,7 @@
 }
 
 /**
- * Items are evenly distributed in the line with equal space
+ * Items are evenly distributed on the line with equal space
  * around them
  */
 
@@ -605,7 +602,7 @@
 }
 
 /**
- * Enable font kerning for optimal spacing
+ * Enable font kerning for optimal character spacing
  */
 
 .kern {
@@ -703,8 +700,8 @@
 }
 
 /**
- * Hack to create a new stacking context in order to invoke hardware
- * acceleration for smoother animations
+ * Create a new stacking context (composite layer) in order
+ * to invoke hardware acceleration for smoother animations
  */
 
 .accelerated {
@@ -721,8 +718,7 @@
 \* ------------------------------------------------------------------ */
 
 /**
- * Indicate visually an element is disabled and prevent user
- * interaction
+ * Indicate than an element is disabled and prevent user interaction
  */
 
 .disabled,
@@ -864,7 +860,8 @@ abbr[title] {
 \* ------------------------------------------------------------------ */
 
 /**
- * All-purpose wrapper for UI elements
+ * All-purpose wrapper for UI elements that allow child elements
+ * to position absolute relative to the container
  */
 
 .container {
@@ -887,7 +884,7 @@ abbr[title] {
 }
 
 /**
- * General overlay UI element
+ * General fixed overlay UI element
  */
 
 .overlay {
