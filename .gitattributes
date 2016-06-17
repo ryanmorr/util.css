@@ -1,1 +1,5 @@
+# Auto detect text files and perform LF normalization
 * text=auto
+
+# Override GitHub's Linguist to correct language
+test.html linguist-vendored
