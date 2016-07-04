@@ -662,38 +662,25 @@
 
     <!-- State -->
 
-    <h2 class="Test-describe">
-        <code>.disabled</code>, 
-        <code>:disabled</code>, 
-        <code>[disabled]</code>, 
-        <code>[aria-disabled]</code>
-    </h2>
-    <h3 class="Test-it">Element should indicate a disabled state</h3>
+    <h2 class="Test-describe"><code>.disabled:disabled</code></h2>
+    <h3 class="Test-it">Indicate that a form field element is disabled</h3>
     <div class="Test-run">
-        <a href="#void-disabled" aria-disabled>disabled</a>
-    </div>
-    <h3 class="Test-it">Button should be unclickable</h3>
-    <div class="Test-run">
-        <button class="disabled">click me</button>
-    </div>
-    <h3 class="Test-it">Input should be unfocusable</h3>
-    <div class="Test-run">
-        <input type="text" size="10" disabled />
+        <input type="text" size="10" class="disabled" disabled />
     </div>
 
-    <h2 class="Test-describe">
-        <code>.loading</code>, 
-        <code>[aria-busy="true"]</code>
-    </h2>
+    <h2 class="Test-describe"><code>.disabled:not(:disabled)</code></h2>
+    <h3 class="Test-it">Indicate that a non-form element is disabled</h3>
+    <div class="Test-run">
+        <a href="#void-disabled" class="disabled">disabled</a>
+    </div>
+
+    <h2 class="Test-describe"><code>.loading</code></h2>
     <h3 class="Test-it">Should indicate that the element is loading</h3>
     <div class="Test-run">
         <div class="loading">loading</div>
     </div>
 
-    <h2 class="Test-describe">
-        <code>.help</code>, 
-        <code>abbr[title]</code>
-    </h2>
+    <h2 class="Test-describe"><code>.help</code></h2>
     <h3 class="Test-it">Should indicate that the element a helpful resource</h3>
     <div class="Test-run">
         <div class="help">help</div>
@@ -707,20 +694,13 @@
 
     <!-- Interaction -->
 
-    <h2 class="Test-describe">
-        <code>.actionable</code>, 
-        <code>[role="button"]</code>, 
-        <code>[aria-controls]</code>
-    </h2>
+    <h2 class="Test-describe"><code>.actionable</code></h2>
     <h3 class="Test-it">Should indicate that an element is actionable</h3>
     <div class="Test-run">
         <div class="actionable">actionable</div>
     </div>
 
-    <h2 class="Test-describe">
-        <code>.draggable</code>, 
-        <code>[draggable="true"]</code>
-    </h2>
+    <h2 class="Test-describe"><code>.draggable</code></h2>
     <h3 class="Test-it">Should indicate that the element is draggable</h3>
     <div class="Test-run">
         <div class="draggable">draggable</div>

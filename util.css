@@ -1,4 +1,4 @@
-/*! util.css v0.1.0 | https://github.com/ryanmorr/util.css */
+/*! util.css v0.2.0 | https://github.com/ryanmorr/util.css */
 
 /* ------------------------------------------------------------------ *\
     Layout
@@ -718,22 +718,22 @@
 \* ------------------------------------------------------------------ */
 
 /**
- * Indicate than an element is disabled and prevent user interaction
+ * Indicate than a form field element is disabled
  */
 
-.disabled,
-:disabled,
-[disabled],
-[aria-disabled] {
-    cursor: default;
+.disabled:disabled {
     opacity: 0.7;
-    pointer-events: none !important;
+    cursor: not-allowed;
+    resize: none;
 }
 
-.disabled *,
-:disabled *,
-[disabled] *,
-[aria-disabled] * {
+/**
+ * Indicate than a non-form element is disabled and prevent user interaction
+ */
+
+.disabled:not(:disabled) {
+    cursor: default;
+    opacity: 0.7;
     pointer-events: none !important;
 }
 
@@ -741,8 +741,7 @@
  * Indicate that an element is loading
  */
 
-.loading,
-[aria-busy="true"] {
+.loading {
     cursor: progress;
 }
 
@@ -750,8 +749,7 @@
  * Indicate that an element is a helpful resource
  */
 
-.help,
-abbr[title] {
+.help {
     cursor: help;
 }
 
@@ -771,9 +769,7 @@ abbr[title] {
  * Indicate that an element is actionable (clickable)
  */
 
-.actionable,
-[role="button"],
-[aria-controls] {
+.actionable {
     cursor: pointer;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
@@ -783,8 +779,7 @@ abbr[title] {
  * Add drag characteristics to an element
  */
 
-.draggable,
-[draggable="true"] {
+.draggable {
     cursor: move;
     -ms-touch-action: none;
     touch-action: none;

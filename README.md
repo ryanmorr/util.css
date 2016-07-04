@@ -1,6 +1,6 @@
 # util.css
 
-> A collection of project agnostic, semantic, and modular CSS utilities.
+> A collection of project agnostic, semantic, and modular CSS utility classes.
 
 ## Features
 
