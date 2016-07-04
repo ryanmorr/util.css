@@ -321,8 +321,8 @@
 
 /*
  * Extend the `hidden-accessible` class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css
+ * to be focusable when navigated to via the keyboard
+ * Source: https://github.com/h5bp/html5-boilerplate
  */
 
 .hidden-accessible.focusable:active,
@@ -336,8 +336,8 @@
 }
 
 /**
- * Hide an element visually, but maintain its layout offscreen so that
- * its width and height and still be accurately measured
+ * Hide an element visually, but maintain its layout offscreen
+ * so that its width and height and still be accurately measured
  */
 
 .hidden-measurable {
@@ -728,7 +728,8 @@
 }
 
 /**
- * Indicate than a non-form element is disabled and prevent user interaction
+ * Indicate than a non-form element is disabled and prevent
+ * user interaction
  */
 
 .disabled:not(:disabled) {
@@ -811,7 +812,8 @@
 }
 
 /**
- * Prevent the callout menu appearing in iOS Safari when the user performs tap & hold
+ * Prevent the callout menu appearing in iOS Safari when the
+ * user performs tap & hold
  */
 
 .prevent-callout {
