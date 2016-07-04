@@ -19,7 +19,7 @@ The library is composed of over 70 utility classes written in raw CSS (not a pre
 
 #### Layout
 
-Name                | Description
+Class                | Description
 ------------------- | --------------------------------------------------------------------------------------------------------------------
 `clearfix`          | Allows an element to stretch to accommodate floating elements.
 `pull-left`         | Float an element left.
@@ -30,7 +30,7 @@ Name                | Description
 
 #### Flexbox
 
-Name                          | Description
+Class                          | Description
 ----------------------------- | --------------------------------------------------------------------------------------------------------
 `flex`                        | Block element that lays out its content according to flexbox.
 `inline-flex`                 | Inline element that lays out its content according to flexbox.
@@ -54,7 +54,7 @@ Name                          | Description
 
 #### Visibility
 
-Name                  | Description
+Class                  | Description
 --------------------- | --------------------------------------------------------------------------------------------------------------------------
 `show`                | Show an element.
 `hide`                | Hide an element visually and from screen readers.
@@ -76,7 +76,7 @@ Name                  | Description
 
 #### Positioning
 
-Name                | Description
+Class                | Description
 ------------------- | -------------------------------------------------------------------------------------------------------
 `center`            | Center an element horizontally (requires width).
  `middle`           | Center an element vertically.
@@ -93,7 +93,7 @@ Name                | Description
 
 #### Text
 
-Name            | Description
+Class            | Description
 --------------- | ---------------------------------------------------------------------
 `antialiased`   | Enable antialiasing for a smoother font.
 `kern`          | Enable font kerning for optimal character spacing.
@@ -102,14 +102,14 @@ Name            | Description
 
 #### Images
 
-Name             | Description
+Class             | Description
 ---------------- | -------------------------------------------------------------------------------------------------------------
 `hide-text`      | Image replacement to provide a caption to an image that is only available to web crawlers and screen readers.
 `img-responsive` | Make an image responsive while maintaining aspect ratio.
 
 #### Transitions
 
-Name          | Description
+Class          | Description
 ------------- | -----------------------------------------------------------------------------------------------------------------
 `transition`  | Allow an element to transition whenever a property changes.
 `fadable`     | Provides a fade in/out effect to an element.
@@ -118,7 +118,7 @@ Name          | Description
 
 #### State
 
-Name         | Description
+Class         | Description
 ------------ | ------------------------------------------------------------------
 `disabled`   | Indicate than an element is disabled and prevent user interaction.
 `loading`    | Indicate that an element is loading.
@@ -127,7 +127,7 @@ Name         | Description
 
 #### Interaction
 
-Name                    | Description
+Class                    | Description
 ----------------------- | -----------------------------------------------------------------------------------
 `actionable`            | Indicate that an element is actionable (clickable).
 `draggable`             | Add drag characteristics to an element.
@@ -140,7 +140,7 @@ Name                    | Description
 
 #### User Interface
 
-Name        | Description
+Class        | Description
 ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------
 `container` | All-purpose wrapper for UI elements that allow child elements to position absolute relative to the container and automatically clears floats.
 `overlay`   | General fixed overlay UI element
