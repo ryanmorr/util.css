@@ -1,5 +1,7 @@
 # util.css
 
+[![GitHub version](https://badge.fury.io/gh/ryanmorr%2Futil.css.svg)](https://badge.fury.io/gh/ryanmorr%2Futil.css) [![Build Status](https://travis-ci.org/ryanmorr/util.css.svg?branch=master)](https://travis-ci.org/ryanmorr/util.css) ![Size](https://badge-size.herokuapp.com/ryanmorr/util.css/master/util.min.css.svg?color=blue&label=file%20size)
+
 > A collection of project agnostic, semantic, and modular CSS utility classes.
 
 ## Features
