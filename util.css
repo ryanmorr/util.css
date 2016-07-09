@@ -1,4 +1,4 @@
-/*! util.css v0.2.0 | https://github.com/ryanmorr/util.css */
+/*! util.css v0.2.1 | https://github.com/ryanmorr/util.css */
 
 /* ------------------------------------------------------------------ *\
     Layout
@@ -627,10 +627,14 @@
  */
 
 .text-break {
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    -webkit-hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
     -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
     hyphens: auto;
 }
 
