@@ -1,4 +1,4 @@
-/*! util.css v0.2.1 | https://github.com/ryanmorr/util.css */
+/*! util.css v0.3.1 | https://github.com/ryanmorr/util.css */
 
 /* ------------------------------------------------------------------ *\
     Layout
@@ -587,7 +587,7 @@
 }
 
 /* ------------------------------------------------------------------ *\
-    Text
+    Typography
 \* ------------------------------------------------------------------ */
 
 /**
@@ -636,6 +636,86 @@
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+}
+
+/**
+ * Align text to the left of its container
+ */
+
+.text-left {
+    text-align: left;
+}
+
+/**
+ * Align test to the right of its container
+ */
+
+.text-right {
+    text-align: right;
+}
+
+/**
+ * Align text in the center of its container
+ */
+
+.text-center {
+    text-align: center;
+}
+
+/**
+ * Ensure text is spaced to fill the width of its container
+ */
+
+.text-justify {
+    text-align: justify;
+}
+
+/**
+ * Convert text to lowercase
+ */
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+/**
+ * Convert text to uppercase
+ */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/**
+ * Capitalize text
+ */
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/**
+ * Make text normal font weight
+ */
+
+.text-normal {
+    font-weight: normal;
+}
+
+/**
+ * Make text bold
+ */
+
+.text-bold {
+    font-weight: bold;
+}
+
+/**
+ * Make text italic
+ */
+
+.text-italic {
+    font-style: italic;
 }
 
 /* ------------------------------------------------------------------ *\
@@ -722,7 +802,7 @@
 \* ------------------------------------------------------------------ */
 
 /**
- * Indicate than a form field element is disabled
+ * Indicate that a form field element is disabled
  */
 
 .disabled:disabled {
@@ -732,7 +812,7 @@
 }
 
 /**
- * Indicate than a non-form element is disabled and prevent
+ * Indicate that a non-form element is disabled and prevent
  * user interaction
  */
 
