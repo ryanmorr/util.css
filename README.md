@@ -19,7 +19,7 @@ The library is composed of dozens of utility classes written in raw CSS (not a p
 * [Interaction](#interaction)
 * [User Interface](#user-interface)
 
-#### Layout
+### Layout
 
 Class                | Description
 -------------------- | --------------------------------------------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ Class                | Description
 `responsive-height`  | Sets a maximum height relative to the parent and auto scales the widt (parent element must have a fixed height).
 `border-box`         | Reset the box model so that it doesn't include the padding and border as part of the width and height of the element.
 
-#### Flexbox
+### Flexbox
 
 Class                          | Description
 ------------------------------ | --------------------------------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ Class                          | Description
 `flex-nowrap`                  | Force items to be laid out on a single line.
 `flex-wrap`                    | Allow items to break into multiple lines.
 
-#### Visibility
+### Visibility
 
 Class                  | Description
 ---------------------- | --------------------------------------------------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ Class                  | Description
 `visible-high-res`     | Make an element visible only on high resolution devices.
 `hidden-high-res`      | Make an element hidden only on high resolution devices.
 
-#### Positioning
+### Positioning
 
 Class                | Description
 -------------------- | -------------------------------------------------------------------------------------------------------
@@ -93,7 +93,7 @@ Class                | Description
 `abs-bottom-center`  | Align an absolutely positioned element to the bottom-center of its container (requires width).
 `abs-bottom-right`   | Align an absolutely positioned element to the bottom-right of its container.
 
-#### Typography
+### Typography
 
 Class             | Description
 ----------------- | ---------------------------------------------------------------------
@@ -112,14 +112,14 @@ Class             | Description
 `text-bold`       | Make text bold.
 `text-italic`     | Make text italic.
 
-#### Images
+### Images
 
 Class             | Description
 ----------------- | -------------------------------------------------------------------------------------------------------------
 `hide-text`       | Image replacement to provide a caption to an image that is only available to web crawlers and screen readers.
 `img-responsive`  | Make an image responsive while maintaining aspect ratio.
 
-#### Transitions
+### Transitions
 
 Class          | Description
 -------------- | -----------------------------------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ Class          | Description
 `collapsible`  | Provides a collapse/expand effect to an element.
 `accelerated`  | Create a new stacking context (composite layer) in order to invoke hardware acceleration for smoother animations.
 
-#### State
+### State
 
 Class         | Description
 ------------- | ------------------------------------------------------------------
@@ -137,7 +137,7 @@ Class         | Description
 `help`        | Indicate that an element is a helpful resource.
 `restricted`  | Indicate that an element is restricted from interaction.
 
-#### Interaction
+### Interaction
 
 Class                    | Description
 ------------------------ | -----------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ Class                    | Description
 `scrollable-vertical`    | Make an element vertically scrollable
 `scrollable-horizontal`  | Make an element horizontally scrollable
 
-#### User Interface
+### User Interface
 
 Class        | Description
 ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------
