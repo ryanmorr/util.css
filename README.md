@@ -1,6 +1,10 @@
 # util.css
 
-[![GitHub version](https://badge.fury.io/gh/ryanmorr%2Futil.css.svg)](https://badge.fury.io/gh/ryanmorr%2Futil.css) [![Build Status](https://travis-ci.org/ryanmorr/util.css.svg?branch=master)](https://travis-ci.org/ryanmorr/util.css) ![Size](https://badge-size.herokuapp.com/ryanmorr/util.css/master/util.min.css.svg?color=blue&label=file%20size)
+[![Version Badge][version-image]][project-url]
+[![Build Status][build-image]][build-url]
+[![Dependencies][dependencies-image]][project-url]
+[![License][license-image]][license-url]
+[![File Size][file-size-image]][project-url]
 
 > A collection of project agnostic, semantic, and modular CSS utility classes.
 
@@ -170,3 +174,12 @@ bower install ryanmorr/util.css
 ## License
 
 This project is dedicated to the public domain as described by the [Unlicense](http://unlicense.org/).
+
+[project-url]: https://github.com/ryanmorr/util.css
+[version-image]: https://badge.fury.io/gh/ryanmorr%2Futil.css.svg
+[build-url]: https://travis-ci.org/ryanmorr/util.css
+[build-image]: https://travis-ci.org/ryanmorr/util.css.svg
+[dependencies-image]: https://david-dm.org/ryanmorr/util.css.svg
+[license-image]: https://img.shields.io/badge/license-Unlicense-blue.svg
+[license-url]: UNLICENSE
+[file-size-image]: https://badge-size.herokuapp.com/ryanmorr/util.css/master/util.min.css.svg?color=blue&label=file%20size
