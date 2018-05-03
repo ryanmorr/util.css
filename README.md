@@ -32,7 +32,7 @@ Class                | Description
 `pull-right`         | Float an element right.
 `responsive-width`   | Sets a maximum width relative to the parent and auto scales the height.
 `responsive-height`  | Sets a maximum height relative to the parent and auto scales the widt (parent element must have a fixed height).
-`border-box`         | Reset the box model so that it doesn't include the padding and border as part of the width and height of the element.
+`border-box`         | Reset the box model so that it includes the padding and border within an element's defined width and height.
 
 ### Flexbox
 

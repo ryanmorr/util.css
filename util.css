@@ -57,8 +57,8 @@
 }
 
 /**
- * Don't include the padding and border as part of the width
- * and height of an element
+ * Include the padding and border within an element's defined
+ * width and height
  */
 
 .border-box,
