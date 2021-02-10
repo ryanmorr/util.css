@@ -1,29 +1,25 @@
 {
-  "name": "util.css",
+  "name": "@ryanmorr/util.css",
   "description": "A collection of project agnostic, semantic, and modular CSS utility classes",
   "version": "0.3.1",
   "license": "Unlicense",
+  "author": "Ryan Morr",
   "homepage": "https://github.com/ryanmorr/util.css",
+  "repository": "github:ryanmorr/util.css",
+  "bugs": "https://github.com/ryanmorr/util.css/issues",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "util.css",
-  "author": {
-    "name": "Ryan Morr",
-    "email": "rm.morr@gmail.com",
-    "url": "http://ryanmorr.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ryanmorr/util.css.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ryanmorr/util.css/issues"
-  },
   "scripts": {
-    "test": "stylelint util.css",
-    "minify": "cleancss -o util.min.css util.css"
+    "test": "stylelint src/*.css",
+    "minify": "css-combine src/util.css > dist/util.css",
+    "build": "npm run minify && cleancss -o dist/util.min.css dist/util.css"
   },
   "devDependencies": {
-    "clean-css": "^3.4.13",
-    "stylelint": "^6.5.1",
-    "stylelint-config-standard": "^8.0.0"
+    "clean-css-cli": "^5.0.0",
+    "css-combine": "^1.0.0",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
