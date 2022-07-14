@@ -1,0 +1,28 @@
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.responsive-width {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-height {
+    box-sizing: border-box;
+    max-height: 100%;
+    width: auto;
+}
