@@ -10,16 +10,16 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "util.css",
+  "main": "dist/util.min.css",
   "scripts": {
     "test": "stylelint src/*.css",
     "minify": "css-combine src/util.css > dist/util.css",
     "build": "npm run minify && cleancss -o dist/util.min.css dist/util.css"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.0.0",
+    "clean-css-cli": "^5.6.1",
     "css-combine": "^1.0.0",
-    "stylelint": "^13.9.0",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0"
   }
 }
