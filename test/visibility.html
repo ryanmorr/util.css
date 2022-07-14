@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>util.css visibility tests</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../src/visibility.css">
+
+<div class="Test">
+    <h1 class="Test-title">util.css visibility tests</h1>
+
+    <h2 class="Test-describe"><code>.hidden</code></h2>
+    <h3 class="Test-it">The element should not be visible and without layout</h3>
+    <div class="Test-run">
+        <div class="hidden" style="display: block">hidden</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.invisible</code></h2>
+    <h3 class="Test-it">The element should not be visible</h3>
+    <div class="Test-run">
+        <div class="invisible highlight">invisible</div>
+    </div>
+    <h3 class="Test-it">The element should have layout</h3>
+    <div class="Test-run">
+        <div class="highlight">
+            <div class="invisible">invisible</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.transparent</code></h2>
+    <h3 class="Test-it">The element should be not visible</h3>
+    <div class="Test-run">
+        <div class="transparent">transparent</div>
+    </div>
+    <h3 class="Test-it">The element should have layout</h3>
+    <div class="Test-run">
+        <div class="highlight">
+            <div class="transparent">transparent</div>
+        </div>
+    </div>
+    <h3 class="Test-it">The element should still be a target for mouse events</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: inline-block">
+            <a href="#void-transparent" class="transparent">clickable</a>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.offscreen</code></h2>
+    <h3 class="Test-it">The element should not be visible, but maintain layout offscreen</h3>
+    <div class="Test-run">
+        <div class="offscreen highlight" style="width: 5000px; height: 5000px">hidden</div>
+        <div class="output"></div>
+        <script>
+        var offscreen = document.querySelector('.offscreen');
+        document.querySelector('.output').innerHTML = 'width: ' + offscreen.style.width + ', height: ' + offscreen.style.height;
+        </script>
+    </div>
+
+    <h2 class="Test-describe"><code>.hidden-accessible</code></h2>
+    <h3 class="Test-it">The element should not be visible and without layout, but available to screen readers</h3>
+    <div class="Test-run">
+        <div class="hidden-accessible">hidden-accessible</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.hidden-accessible-focusable</code></h2>
+    <h3 class="Test-it">The element should be visible when it receives focus</h3>
+    <div class="Test-run">
+        <a href="#void-hidden-accessible-focusable-1" class="hidden-accessible-focusable">focusable link</a>
+    </div>
+    <h3 class="Test-it">The element should be visible when it or a child element receives focus</h3>
+    <div class="Test-run">
+        <div class="hidden-accessible-focusable">
+            <a href="#void-hidden-accessible-focusable-2">focusable link</a>
+        </div>
+    </div>
+</div>
