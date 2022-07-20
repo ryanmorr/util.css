@@ -48,7 +48,9 @@
     <h2 class="Test-describe"><code>.offscreen</code></h2>
     <h3 class="Test-it">The element should not be visible, but maintain layout offscreen</h3>
     <div class="Test-run">
-        <div class="offscreen highlight" style="width: 5000px; height: 5000px">hidden</div>
+        <div style="position: relative">
+            <div class="offscreen highlight" style="width: 5000px; height: 5000px">hidden</div>
+        </div>
         <div class="output"></div>
         <script>
         var offscreen = document.querySelector('.offscreen');
