@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>util.css typography tests</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../src/typography.css">
+
+<div class="Test">
+    <h1 class="Test-title">util.css typography tests</h1>
+
+    <h2 class="Test-describe"><code>.antialiased</code></h2>
+    <h3 class="Test-it">Should render text using grayscale antialiasing</h3>
+    <div class="Test-run">
+        <h1 class="antialiased">Lorem ipsum dolor sit amet, consectetur cras amet.</h1>
+    </div>
+
+    <h2 class="Test-describe"><code>.subpixel-antialiased</code></h2>
+    <h3 class="Test-it">Should render text using grayscale subpixel-antialiasing</h3>
+    <div class="Test-run">
+        <h1 class="subpixel-antialiased">Lorem ipsum dolor sit amet, consectetur cras amet.</h1>
+    </div>
+
+    <h2 class="Test-describe"><code>.text-truncate</code></h2>
+    <h3 class="Test-it">Should prevent text from wrapping and truncate with an ellipsis</h3>
+    <div class="Test-run">
+        <div class="highlight" style="width: 200px">
+            <p class="text-truncate">Diam ullamcorper pretium a elit est fusce duis bibendum fermentum cras semper a leo a vestibulum sed ante ipsum a proin. Aenean nunc nullam habitasse duis senectus condimentum scelerisque et vestibulum curae netus vestibulum parturient vestibulum odio eu risus placerat nam.</p>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.text-clip</code></h2>
+    <h3 class="Test-it">Should prevent text from wrapping and truncate with a hard clip</h3>
+    <div class="Test-run">
+        <div class="highlight" style="width: 200px">
+            <p class="text-clip">Diam ullamcorper pretium a elit est fusce duis bibendum fermentum cras semper a leo a vestibulum sed ante ipsum a proin. Aenean nunc nullam habitasse duis senectus condimentum scelerisque et vestibulum curae netus vestibulum parturient vestibulum odio eu risus placerat nam.</p>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.text-break</code></h2>
+    <h3 class="Test-it">Should break the text if the length exceeds the width of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="width: 100px">
+            <p class="text-break">vestibulumentableolli</p>
+        </div>
+    </div>
+</div>

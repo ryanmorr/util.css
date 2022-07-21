@@ -1,0 +1,27 @@
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.subpixel-antialiased {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+.text-truncate {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-clip {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+  
+.text-break {
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+}
