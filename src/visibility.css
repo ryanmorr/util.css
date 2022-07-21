@@ -29,3 +29,15 @@
     white-space: nowrap !important;
     border: 0 !important;
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .hidden-touch {
+        display: none !important;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .hidden-non-touch {
+        display: none !important;
+    }
+}
