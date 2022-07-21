@@ -1,0 +1,145 @@
+.align-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.align-middle-center {
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Absolute Positioning */
+
+.align-abs-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.align-abs-top-center {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.align-abs-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.align-abs-middle-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.align-abs-middle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.align-abs-middle-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.align-abs-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.align-abs-bottom-center {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.align-abs-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Flexbox/Grid Items */
+
+.align-self-top-left {
+    margin-right: auto;
+    align-self: start;
+}
+
+.align-self-top-center {
+    margin-right: auto;
+    margin-left: auto;
+    align-self: start;
+}
+
+.align-self-top-right {
+    margin-left: auto;
+    align-self: start;
+}
+
+.align-self-middle-left {
+    margin-right: auto;
+    align-self: center;
+}
+
+.align-self-middle-center {
+    margin: auto;
+    align-self: center;
+}
+
+.align-self-middle-right {
+    margin-left: auto;
+    align-self: center;
+}
+
+.align-self-bottom-left {
+    margin-right: auto;
+    align-self: end;
+}
+
+.align-self-bottom-center {
+    margin-right: auto;
+    margin-left: auto;
+    align-self: end;
+}
+
+.align-self-bottom-right {
+    margin-left: auto;
+    align-self: end;
+}
+
+/* Flexbox/Grid Content */
+
+.align-flex-middle-center {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.align-grid-middle-center {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

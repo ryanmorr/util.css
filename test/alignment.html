@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>util.css alignment tests</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../src/alignment.css">
+
+<div class="Test">
+    <h1 class="Test-title">util.css alignment tests</h1>
+
+    <h2 class="Test-describe"><code>.align-center</code></h2>
+    <h3 class="Test-it">Should center the element horizontally</h3>
+    <div class="Test-run">
+        <div class="highlight">
+            <div class="align-center highlight" style="width: 100px; text-align: center">center</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-middle</code></h2>
+    <h3 class="Test-it">Should center the element vertically</h3>
+    <div class="Test-run">
+        <div class="highlight" style="height: 100px">
+            <div class="align-middle highlight">middle</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-middle-center</code></h2>
+    <h3 class="Test-it">Should center the element horizontally and vertically</h3>
+    <div class="Test-run">
+        <div class="highlight" style="height: 100px;">
+            <div class="align-middle-center highlight">middle center</div>
+        </div>
+    </div>
+
+    <!-- Absolute -->
+
+    <h2 class="Test-describe"><code>.align-abs-top-left</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the top-left of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-top-left highlight">top left</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-abs-top-center</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the top-center of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-top-center highlight">top center</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-abs-top-right</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the top-right of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-top-right highlight">top right</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-abs-middle-left</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the middle-left of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-middle-left highlight">middle left</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-abs-middle-center</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the middle-center of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-middle-center highlight">middle center</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-abs-middle-right</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the middle-right of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-middle-right highlight">middle right</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-abs-bottom-left</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the bottom-left of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-bottom-left highlight">bottom left</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-abs-bottom-center</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the bottom-center of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-bottom-center highlight">bottom center</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-abs-bottom-right</code></h2>
+    <h3 class="Test-it">Should align an absolutely positioned element to the bottom-right of its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="position: relative; height: 100px">
+            <div class="align-abs-bottom-right highlight">bottom right</div>
+        </div>
+    </div>
+    
+    <!-- Flexbox/Grid -->
+
+    <h2 class="Test-describe"><code>.align-self-top-left</code></h2>
+    <h3 class="Test-it">Should align an element to the top-left within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-top-left highlight">top left</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the top-left within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-top-left highlight">top left</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-self-top-center</code></h2>
+    <h3 class="Test-it">Should align an element to the top-center within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-top-center highlight">top center</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the top-center within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-top-center highlight">top center</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-self-top-right</code></h2>
+    <h3 class="Test-it">Should align an element to the top-right within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-top-right highlight">top right</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the top-right within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-top-right highlight">top right</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-self-middle-left</code></h2>
+    <h3 class="Test-it">Should align an element to the middle-left within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-middle-left highlight">middle left</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the middle-left within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-middle-left highlight">middle left</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-self-middle-center</code></h2>
+    <h3 class="Test-it">Should align an element to the middle-center within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-middle-center highlight">middle center</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the middle-center within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-middle-center highlight">middle center</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-self-middle-right</code></h2>
+    <h3 class="Test-it">Should align an element to the middle-right within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-middle-right highlight">middle right</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the middle-right within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-middle-right highlight">middle right</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-self-bottom-left</code></h2>
+    <h3 class="Test-it">Should align an element to the bottom-left within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-bottom-left highlight">bottom left</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the bottom-left within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-bottom-left highlight">bottom left</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-self-bottom-center</code></h2>
+    <h3 class="Test-it">Should align an element to the bottom-center within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-bottom-center highlight">bottom center</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the bottom-center within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-bottom-center highlight">bottom center</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-self-bottom-right</code></h2>
+    <h3 class="Test-it">Should align an element to the bottom-right within a flexbox container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: flex; height: 100px">
+            <div class="align-self-bottom-right highlight">bottom right</div>
+        </div>
+    </div>
+    <h3 class="Test-it">Should align an element to the bottom-right within a grid container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="display: grid; height: 100px">
+            <div class="align-self-bottom-right highlight">bottom right</div>
+        </div>
+    </div>
+
+    <!-- Content -->
+
+    <h2 class="Test-describe"><code>.align-flex-middle-center</code></h2>
+    <h3 class="Test-it">Should align children in the middle-center of the element using flexbox</h3>
+    <div class="Test-run">
+        <div class="highlight align-flex-middle-center" style="height: 100px">
+            <div class="highlight">1</div>
+            <div class="highlight">2</div>
+            <div class="highlight">3</div>
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-grid-middle-center</code></h2>
+    <h3 class="Test-it">Should align children in the middle-center of the element using grid</h3>
+    <div class="Test-run">
+        <div class="highlight align-grid-middle-center" style="height: 100px">
+            <div class="highlight">1</div>
+            <div class="highlight">2</div>
+            <div class="highlight">3</div>
+        </div>
+    </div>
+
+</div>
