@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>util.css media tests</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../src/media.css">
+
+<div class="Test">
+    <h1 class="Test-title">util.css media tests</h1>
+
+    <h2 class="Test-describe"><code>.hide-text</code></h2>
+    <h3 class="Test-it">Should hide the image caption, but be accessible to web crawlers and screen readers</h3>
+    <div class="Test-run">
+        <div class="hide-text" style="background-image: url('data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7'); width: 100px; height: 100px;">image caption</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.image-responsive</code></h2>
+    <h3 class="Test-it">Should make the image scale down to fit in its container</h3>
+    <div class="Test-run">
+        <div class="highlight" style="width: 150px; height: 150px; padding: 5px">
+            <img class="image-responsive highlight" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22200%22%20height%3D%22200%22%20viewBox%3D%220%200%20200%20200%22%20preserveAspectRatio%3D%22none%22%3E%3C!--%0ASource%20URL%3A%20holder.js%2F200x200%0ACreated%20with%20Holder.js%202.8.2.%0ALearn%20more%20at%20http%3A%2F%2Fholderjs.com%0A(c)%202012-2015%20Ivan%20Malopinsky%20-%20http%3A%2F%2Fimsky.co%0A--%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%3C!%5BCDATA%5B%23holder_154fea75ae5%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%5D%5D%3E%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_154fea75ae5%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22%23777%22%2F%3E%3Cg%3E%3Ctext%20x%3D%2275.5%22%20y%3D%22104.5%22%3E200x200%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" />
+        </div>
+    </div>
+
+    <h2 class="Test-describe"><code>.image-contain</code></h2>
+    <h3 class="Test-it">Should fit the image within the container while preserving its aspect ratio</h3>
+    <div class="Test-run">
+        <img class="image-contain highlight" style="width: 150px; height: 150px;" src="https://images.unsplash.com/photo-1655909248336-7b1491cf58b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+    </div>
+
+    <h2 class="Test-describe"><code>.image-cover</code></h2>
+    <h3 class="Test-it">Should fill the container with the image while preserving its aspect ratio</h3>
+    <div class="Test-run">
+        <img class="image-cover highlight" style="width: 150px; height: 150px;" src="https://images.unsplash.com/photo-1655909248336-7b1491cf58b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+    </div>
+</div>

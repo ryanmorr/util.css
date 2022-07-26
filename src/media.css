@@ -1,0 +1,22 @@
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.image-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.image-contain {
+    object-fit: contain;
+    object-position: center;
+}
+
+.image-cover {
+    object-fit: cover;
+    object-position: right top;
+}
