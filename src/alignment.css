@@ -1,3 +1,11 @@
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
 .align-center {
     float: none;
     margin-left: auto;
@@ -126,20 +134,4 @@
 .align-self-bottom-right {
     margin-left: auto;
     align-self: end;
-}
-
-/* Flexbox/Grid Content */
-
-.align-flex-middle-center {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.align-grid-middle-center {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 }

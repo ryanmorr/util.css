@@ -8,9 +8,21 @@
 
 <div class="Test">
     <h1 class="Test-title">util.css alignment tests</h1>
+    
+    <h2 class="Test-describe"><code>.align-left</code></h2>
+    <h3 class="Test-it">Should float the element left</h3>
+    <div class="Test-run clearfix">
+        <div class="align-left">float left</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.align-right</code></h2>
+    <h3 class="Test-it">Should float the element right</h3>
+    <div class="Test-run clearfix">
+        <div class="align-right">float right</div>
+    </div>
 
     <h2 class="Test-describe"><code>.align-center</code></h2>
-    <h3 class="Test-it">Should center the element horizontally</h3>
+    <h3 class="Test-it">Should float the element in the center horizontally</h3>
     <div class="Test-run">
         <div class="highlight">
             <div class="align-center highlight" style="width: 100px; text-align: center">center</div>
@@ -232,28 +244,6 @@
     <div class="Test-run">
         <div class="highlight" style="display: grid; height: 100px">
             <div class="align-self-bottom-right highlight">bottom right</div>
-        </div>
-    </div>
-
-    <!-- Content -->
-
-    <h2 class="Test-describe"><code>.align-flex-middle-center</code></h2>
-    <h3 class="Test-it">Should align children in the middle-center of the element using flexbox</h3>
-    <div class="Test-run">
-        <div class="highlight align-flex-middle-center" style="height: 100px">
-            <div class="highlight">1</div>
-            <div class="highlight">2</div>
-            <div class="highlight">3</div>
-        </div>
-    </div>
-
-    <h2 class="Test-describe"><code>.align-grid-middle-center</code></h2>
-    <h3 class="Test-it">Should align children in the middle-center of the element using grid</h3>
-    <div class="Test-run">
-        <div class="highlight align-grid-middle-center" style="height: 100px">
-            <div class="highlight">1</div>
-            <div class="highlight">2</div>
-            <div class="highlight">3</div>
         </div>
     </div>
 
