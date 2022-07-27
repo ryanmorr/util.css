@@ -33,3 +33,17 @@
     align-content: center;
     align-items: center;
 }
+
+.flex-horizontal-stack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+}
+
+.flex-vertical-stack {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-self: stretch;
+}
