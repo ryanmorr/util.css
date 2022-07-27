@@ -19,7 +19,7 @@
     text-overflow: clip;
     white-space: nowrap;
 }
-  
+
 .text-break {
     hyphens: auto;
     word-break: break-word;
