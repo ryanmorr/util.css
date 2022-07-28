@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>util.css UX tests</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../src/ux.css">
+
+<div class="Test">
+    <h1 class="Test-title">util.css UX tests</h1>
+
+    <h2 class="Test-describe"><code>.unselectable</code></h2>
+    <h3 class="Test-it">Should prevent text selection</h3>
+    <div class="Test-run">
+        <div class="unselectable">sample text</div>
+    </div>
+
+    <h2 class="Test-describe"><code>.disabled</code></h2>
+    <h3 class="Test-it">Should not support user interaction of any kind</h3>
+    <div class="Test-run">
+        <a href="#" class="disabled">sample text</a>
+    </div>
+</div>

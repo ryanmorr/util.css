@@ -1,0 +1,19 @@
+/* stylelint-disable property-no-vendor-prefix */
+
+.unselectable {
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+}
+
+.disabled {
+    -webkit-tap-highlight-color: rgba(0 0 0 / 0%) !important;
+    pointer-events: none !important;
+    touch-action: none !important;
+    -webkit-touch-callout: none !important;
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+}
+
+/* stylelint-enable property-no-vendor-prefix */
