@@ -30,6 +30,15 @@
     border: 0 !important;
 }
 
+.hidden-scrollbars {
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.hidden-scrollbars::-webkit-scrollbar {
+    display: none;
+}
+
 @media (hover: none) and (pointer: coarse) {
     .hidden-touch {
         display: none !important;
