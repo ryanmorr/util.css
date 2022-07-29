@@ -46,16 +46,11 @@
     </div>
 
     <h2 class="Test-describe"><code>.offscreen</code></h2>
-    <h3 class="Test-it">The element should not be visible, but maintain layout offscreen</h3>
+    <h3 class="Test-it">The element should not be visible, but maintain dimensions offscreen</h3>
     <div class="Test-run">
         <div style="position: relative">
             <div class="offscreen highlight" style="width: 5000px; height: 5000px">hidden</div>
         </div>
-        <div class="output"></div>
-        <script>
-        var offscreen = document.querySelector('.offscreen');
-        document.querySelector('.output').innerHTML = 'width: ' + offscreen.style.width + ', height: ' + offscreen.style.height;
-        </script>
     </div>
 
     <h2 class="Test-describe"><code>.hidden-accessible</code></h2>
