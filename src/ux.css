@@ -16,4 +16,14 @@
     user-select: none !important;
 }
 
+.scroll-horizontal {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.scroll-vertical {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 /* stylelint-enable property-no-vendor-prefix */
