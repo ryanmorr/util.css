@@ -8,6 +8,30 @@
     clear: both !important;
 }
 
+.border-box,
+.border-box::before,
+.border-box::after {
+     box-sizing: border-box;
+}
+ 
+.border-box *,
+.border-box *::before,
+.border-box *::after {
+     box-sizing: inherit;
+}
+
+.content-box,
+.content-box::before,
+.content-box::after {
+     box-sizing: content-box;
+}
+ 
+.content-box *,
+.content-box *::before,
+.content-box *::after {
+     box-sizing: inherit;
+}
+
 .responsive-width {
     box-sizing: border-box;
     max-width: 100%;
