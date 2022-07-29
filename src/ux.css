@@ -7,7 +7,7 @@
 }
 
 .disabled {
-    -webkit-tap-highlight-color: rgba(0 0 0 / 0%) !important;
+    -webkit-tap-highlight-color: transparent !important;
     pointer-events: none !important;
     touch-action: none !important;
     -webkit-touch-callout: none !important;
