@@ -2,4 +2,4 @@
 * text=auto
 
 # Override GitHub's Linguist to correct language
-test.html linguist-vendored
+test/* linguist-vendored
