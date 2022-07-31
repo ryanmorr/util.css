@@ -1,185 +1,117 @@
 # util.css
 
 [![Version Badge][version-image]][project-url]
-[![Build Status][build-image]][build-url]
-[![Dependencies][dependencies-image]][project-url]
 [![License][license-image]][license-url]
-[![File Size][file-size-image]][project-url]
+[![Build Status][build-image]][build-url]
 
-> A collection of project agnostic, semantic, and modular CSS utility classes.
+> A collection of unopinionated and modular CSS utility classes.
+
+## Install
+
+Download [util.css](https://github.com/ryanmorr/util.css/raw/master/dist/util.min.css) directly or install via NPM:
+
+```sh
+npm install @ryanmorr/util.css
+```
 
 ## Features
 
-The library is composed of dozens of utility classes written in raw CSS (not a preprocessor such as Sass or Less). All the utilities are grouped into the following categories:
+The library is composed of dozens of utility classes written in raw CSS (not a preprocessor such as Sass or Less). Unlike Atomic CSS, util.css does not contain (with a few exceptions) single-purpose units of styles, such as `.text-center {text-align: center}`. Instead, it focuses on common helpers and fixes that add functionality beyond simple shortcuts. Theses classes are unopinionated and modular declarations, making them applicable to and easily adopted into any project.
 
-* [Layout](#layout)
-* [Flexbox](#flexbox)
-* [Visibility](#visibility)
-* [Positioning](#positioning)
-* [Typography](#typography)
-* [Images](#images)
-* [Transitions](#transitions)
-* [State](#state)
-* [Interaction](#interaction)
-* [User Interface](#user-interface)
+The following is a complete list of all the classes available, grouped into categories. **Note:** For class names, the word "center" refers to horizontal alignment and the word "middle" refers to vertical alignment.
 
 ### Layout
 
-Class                | Description
--------------------- | --------------------------------------------------------------------------------------------------------------------
-`clearfix`           | Allows an element to stretch to accommodate floating elements.
-`pull-left`          | Float an element left.
-`pull-right`         | Float an element right.
-`responsive-width`   | Sets a maximum width relative to the parent and auto scales the height.
-`responsive-height`  | Sets a maximum height relative to the parent and auto scales the widt (parent element must have a fixed height).
-`border-box`         | Reset the box model so that it includes the padding and border within an element's defined width and height.
-
-### Flexbox
-
-Class                          | Description
------------------------------- | --------------------------------------------------------------------------------------------------------
-`flex`                         | Block element that lays out its content according to flexbox.
-`inline-flex`                  | Inline element that lays out its content according to flexbox.
-`flex-align-top`               | Place an item to the top of the container.
-`flex-align-middle`            | Place an item to the bottom of the container.
-`flex-align-bottom`            | Place an item to the bottom of the container.
-`flex-align-left`              | Pack items toward the start line.
-`flex-align-center`            | Items are centered along the line.
-`flex-align-right`             | Pack items toward the end line.
-`flex-align-justify`           | Items are evenly distributed on the line; first item is on the start line, last item on the end line.
-`flex-align-even`              | Items are evenly distributed on the line with equal space between them.
-`flex-align-lines-top`         | Lines are packed to the top of the container.
-`flex-align-lines-middle`      | Lines are packed to the middle of the container.
-`flex-align-lines-bottom`      | Lines are packed to the bottom of the container.
-`flex-align-lines-justify`     | Lines are evenly distributed; the first line is at the top of the container, the last line is at the end.
-`flex-align-lines-even`        | Lines are evenly distributed with equal space between them.
-`flex-row`                     | Items are stacked horizontally, side-by-side.
-`flex-col`                     | Items are stacked vertically, top-to-bottom.
-`flex-nowrap`                  | Force items to be laid out on a single line.
-`flex-wrap`                    | Allow items to break into multiple lines.
+Class | Description
+----- | ------------
+`clearfix` | Allows an element to stretch to accommodate floating elements
+`border-box` | Make the box model of an element and its descendants include the padding and border within the defined width and height of an element
+`content-box` | Make the box model of an element and its descendants add the padding and border to the defined width and height of an element
+`responsive-width` | Sets a maximum width relative to the parent and auto scales the height
+`responsive-height` | Sets a maximum height relative to the parent and auto scales the width (parent element must have a fixed height)
+`flex-middle-center` | Should align children in the middle-center of the element using flexbox
+`grid-middle-center` | Should align children in the middle-center of the element using grid
+`flex-inline-middle-center` | Should align children in the middle-center of the element using inline flexbox
+`flex-horizontal-stack` | Should stack children horizontally using flexbox
+`flex-vertical-stack` | Should stack children vertically using flexbox
 
 ### Visibility
 
-Class                  | Description
----------------------- | --------------------------------------------------------------------------------------------------------------------------
-`show`                 | Show an element.
-`hide`                 | Hide an element visually and from screen readers.
-`invisible`            | Hide an element visually and from screen readers, but maintain layout.
-`transparent`          | Hide an element visually, but still allow it to be accessible to screen readers, maintain layout, and allow pointer events.
-`hidden-accessible`    | Hide an element visually, but still allow it to be accessible to screen readers.
-`focusable`            | Allows a `hidden-accessible` element to be focusable when navigated to via the keyboard.
-`hidden-measurable`    | Hide an element visually, but maintain its layout offscreen so that its width and height and still be accurately measured.
-`visible-extra-small`  | Make an element visible only on extra small screens (less than 767px).
-`hidden-extra-small`   | Make an element hidden only on extra small screens (less than 767px).
-`visible-small`        | Make an element visible only on small screens (768px to 991px).
-`hidden-small`         | Make an element hidden only on small screens (768px to 991px).
-`visible-medium`       | Make an element visible only on medium-sized screens (992px to 1199px).
-`hidden-medium`        | Make an element hidden only on medium-sized screens (992px to 1199px).
-`visible-large`        | Make an element visible only on large screens (1200px and up).
-`hidden-large`         | Make an element hidden only on large screens (1200px and up).
-`visible-high-res`     | Make an element visible only on high resolution devices.
-`hidden-high-res`      | Make an element hidden only on high resolution devices.
+Class | Description
+----- | ------------
+`hidden` | Hide an element visually and from screen readers
+`invisible` | Hide an element visually and from screen readers, but maintain layout
+`transparent` | Hide an element visually, but still allow it to be accessible to screen readers, maintain layout, and allow pointer events
+`offscreen` | Hide an element visually, but maintain its layout offscreen so that its width and height and still be accurately measured
+`hidden-accessible` | Hide an element visually, but still allow it to be accessible to screen readers
+`hidden-accessible-focusable` | Like `hidden-accessible`, but will be visible when it or a child element receives focus
+`hidden-scrollbars` | Hide scrollbars on an element, while still allowing it to be scrollable
+`hidden-touch` | Make an element hidden on touch devices
+`hidden-non-touch` | Make an element hidden on non-touch devices
 
-### Positioning
+### Alignment
 
-Class                | Description
--------------------- | -------------------------------------------------------------------------------------------------------
-`center`             | Center an element horizontally (requires width).
- `middle`            | Center an element vertically.
-`middle-center`      | Center an element horizontally and vertically
-`abs-top-left`       | Align an absolutely positioned element to the top-left of its container.
-`abs-top-center`     | Align an absolutely positioned element to the top-center of its container (requires width).
-`abs-top-right`      | Align an absolutely positioned element to the top-right of its container.
-`abs-middle-left`    | Align an absolutely positioned element to the middle-left of its container (requires height).
-`abs-middle-center`  | Align an absolutely positioned element to the middle-center of its container (requires width & height).
-`abs-middle-right`   | Align an absolutely positioned element to the middle-right of its container (requires height).
-`abs-bottom-left`    | Align an absolutely positioned element to the bottom-left of its container.
-`abs-bottom-center`  | Align an absolutely positioned element to the bottom-center of its container (requires width).
-`abs-bottom-right`   | Align an absolutely positioned element to the bottom-right of its container.
+Class | Description
+----- | ------------
+`align-left` | Float an element left
+`align-right` | Float an element right
+`align-center` | Center an element horizontally
+`align-middle` | Center an element vertically
+`align-middle-center` | Center an element horizontally and vertically
+`align-abs-top-left` | Align an absolutely positioned element to the top-left of its container
+`align-abs-top-center` | Align an absolutely positioned element to the top-center of its container
+`align-abs-top-right` | Align an absolutely positioned element to the top-right of its container
+`align-abs-middle-left` | Align an absolutely positioned element to the middle-left of its container
+`align-abs-middle-center` | Align an absolutely positioned element to the middle-center of its container
+`align-abs-middle-right` | Align an absolutely positioned element to the middle-right of its container
+`align-abs-bottom-left` | Align an absolutely positioned element to the bottom-left of its container
+`align-abs-bottom-center` | Align an absolutely positioned element to the bottom-center of its container
+`align-abs-bottom-right` | Align an absolutely positioned element to the bottom-right of its container
+`align-self-top-left` | Align an element to the top-left within a flexbox or grid container
+`align-self-top-center` | Align an element to the top-center within a flexbox or grid container
+`align-self-top-right` | Align an element to the top-right within a flexbox or grid container
+`align-self-middle-left` | Align an element to the middle-left within a flexbox or grid container
+`align-self-middle-center` | Align an element to the middle-center within a flexbox or grid container
+`align-self-middle-right` | Align an element to the middle-right within a flexbox or grid container
+`align-self-bottom-left` | Align an element to the bottom-left within a flexbox or grid container
+`align-self-bottom-center` | Align an element to the bottom-center within a flexbox or grid container
+`align-self-bottom-right` | Align an element to the bottom-right within a flexbox or grid container
 
 ### Typography
 
-Class             | Description
------------------ | ---------------------------------------------------------------------
-`antialiased`     | Enable antialiasing for a smoother font.
-`kern`            | Enable font kerning for optimal character spacing.
-`text-truncate`   | Prevent text from wrapping and truncate with an ellipsis.
-`text-break`      | Break strings when their length exceeds the width of their container.
-`text-left`       | Align text to the left of its container.
-`text-right`      | Align text to the right of its container.
-`text-center`     | Align text in the center of its container.
-`text-justify`    | Ensure text is spaced to fill the width of its container.
-`text-lowercase`  | Convert text to lowercase.
-`text-uppercase`  | Convert text to uppercase.
-`text-capitalize` | Capitalize text.
-`text-normal`     | Make text normal font weight.
-`text-bold`       | Make text bold.
-`text-italic`     | Make text italic.
+Class | Description
+----- | ------------
+`antialiased` | Render text using grayscale antialiasing
+`subpixel-antialiased` | Render text using subpixel antialiasing
+`text-truncate` | Prevent text from wrapping and truncate with an ellipsis
+`text-clip` | Prevent text from wrapping and truncate with a hard clip
+`text-break` | Break words when their length exceeds the width of their container
 
-### Images
+### Media
 
-Class             | Description
------------------ | -------------------------------------------------------------------------------------------------------------
-`hide-text`       | Image replacement to provide a caption to an image that is only available to web crawlers and screen readers.
-`img-responsive`  | Make an image responsive while maintaining aspect ratio.
+Class | Description
+----- | ------------
+`hide-text` | Image replacement to provide a caption to an image that is only available to web crawlers and screen readers
+`image-responsive` | Make an image responsive while maintaining aspect ratio
+`image-contain` | Fit the image within the container while preserving its aspect ratio
+`image-cover` | Fill the container with the image while preserving its aspect ratio
 
-### Transitions
+### User Experience
 
-Class          | Description
--------------- | -----------------------------------------------------------------------------------------------------------------
-`transition`   | Allow an element to transition whenever a property changes.
-`fadable`      | Provides a fade in/out effect to an element.
-`collapsible`  | Provides a collapse/expand effect to an element.
-`accelerated`  | Create a new stacking context (composite layer) in order to invoke hardware acceleration for smoother animations.
-
-### State
-
-Class         | Description
-------------- | ------------------------------------------------------------------
-`disabled`    | Indicate than an element is disabled and prevent user interaction.
-`loading`     | Indicate that an element is loading.
-`help`        | Indicate that an element is a helpful resource.
-`restricted`  | Indicate that an element is restricted from interaction.
-
-### Interaction
-
-Class                    | Description
------------------------- | -----------------------------------------------------------------------------------
-`actionable`             | Indicate that an element is actionable (clickable).
-`draggable`              | Add drag characteristics to an element.
-`unselectable`           | Prevent text selection.
-`unclickable`            | Prevent user interaction.
-`prevent-callout`        | Prevent the callout menu appearing in iOS Safari when the user performs tap & hold.
-`resizable`              | Make an element resizable on both axes.
-`scrollable-vertical`    | Make an element vertically scrollable
-`scrollable-horizontal`  | Make an element horizontally scrollable
-
-### User Interface
-
-Class        | Description
------------- | ---------------------------------------------------------------------------------------------------------------------------------------------
-`container`  | All-purpose wrapper for UI elements that allow child elements to position absolute relative to the container and automatically clears floats.
-`overlay`    | General fixed overlay UI element
-
-## Installation
-
-Download the [development](http://github.com/ryanmorr/util.css/raw/master/util.css) or [minified](http://github.com/ryanmorr/util.css/raw/master/util.min.css) version, or install it in one of the following ways:
-
-``` sh
-npm install ryanmorr/util.css
-
-bower install ryanmorr/util.css
-```
+Class | Description
+----- | ------------
+`unselectable` | Prevent text selection
+`disabled` | Prevent user interaction of any kind
+`scroll-horizontal` | Make an element display only horizontal scrollbars
+`scroll-vertical` | Make an element display only vertical scrollbars
 
 ## License
 
 This project is dedicated to the public domain as described by the [Unlicense](http://unlicense.org/).
 
 [project-url]: https://github.com/ryanmorr/util.css
-[version-image]: https://badge.fury.io/gh/ryanmorr%2Futil.css.svg
-[build-url]: https://travis-ci.org/ryanmorr/util.css
-[build-image]: https://travis-ci.org/ryanmorr/util.css.svg
-[dependencies-image]: https://david-dm.org/ryanmorr/util.css.svg
-[license-image]: https://img.shields.io/badge/license-Unlicense-blue.svg
+[version-image]: https://img.shields.io/github/package-json/v/ryanmorr/util.css?color=blue&style=flat-square
+[build-url]: https://travis-ci.com/github/ryanmorr/util.css
+[build-image]: https://img.shields.io/travis/com/ryanmorr/util.css?style=flat-square
+[license-image]: https://img.shields.io/github/license/ryanmorr/util.css?color=blue&style=flat-square
 [license-url]: UNLICENSE
-[file-size-image]: https://badge-size.herokuapp.com/ryanmorr/util.css/master/util.min.css.svg?color=blue&label=file%20size
