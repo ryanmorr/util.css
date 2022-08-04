@@ -11,6 +11,7 @@
     "access": "public"
   },
   "main": "dist/util.min.css",
+  "style": "dist/util.min.css",
   "scripts": {
     "test": "stylelint src/*.css",
     "minify": "css-combine src/util.css > dist/util.css",
