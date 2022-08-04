@@ -14,8 +14,8 @@
   "style": "dist/util.min.css",
   "scripts": {
     "test": "stylelint src/*.css",
-    "minify": "css-combine src/util.css > dist/util.css",
-    "build": "npm run minify && cleancss -o dist/util.min.css dist/util.css"
+    "combine": "css-combine src/util.css > dist/util.css",
+    "build": "npm run combine && cleancss -o dist/util.min.css dist/util.css"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.1",
